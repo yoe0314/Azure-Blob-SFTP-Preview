@@ -11,7 +11,7 @@
   * [4/ 容器中新增目錄及上傳檔案](#4-容器中新增目錄及上傳檔案)
   * [5/ 使用FTP Client測試](#5-使用ftp-client測試)
   * [6/ 補充](#6-補充)
-  * [7/ Reference](#7--reference)
+  * [7/ Reference](#7-reference)
 
 ## 1/ 基本介紹
 * [Azure Blob 儲存體的 SSH 檔案傳輸通訊協定 (SFTP) 支援 (預覽)](https://docs.microsoft.com/zh-tw/azure/storage/blobs/secure-file-transfer-protocol-support)
@@ -71,8 +71,8 @@
     * 會出現SSH密碼，建議先把他複製起來，因為一但關閉後就只能夠重新產生。
     * 下載SSH私密金鑰。
 
-![](https://i.imgur.com/UBBfF9z.png =70%x)
-![](https://i.imgur.com/E8DaNhn.png =70%x)
+![](https://i.imgur.com/UBBfF9z.png)
+![](https://i.imgur.com/E8DaNhn.png)
 
 * 新增完的使用者會有連接字串，也建議先複製起來，後續我們在用FTP Client連線的時候會用到這些資訊。
 * 以我的範例來說：
@@ -108,7 +108,7 @@
     * `協定`選擇SFTP。
     * `登入型式`選擇一般。
     * `使用者`輸入```testblobsftp0729. user1ctr.user1```。
-    * `密碼`輸入剛剛複製的SSH密碼，如果忘記可以重新產生![](https://i.imgur.com/bJB2yLy.png =30%x)
+    * `密碼`輸入剛剛複製的SSH密碼，如果忘記可以重新產生![](https://i.imgur.com/bJB2yLy.png)
         * 密碼也可以使用金鑰檔案。
         * `登入型式`須改為`金鑰檔案`，並上傳從Azure上建立出來的SSH金鑰檔。
     * 以上資訊都資訊都填好後，點選連線。
