@@ -25,11 +25,10 @@
 
 ![](https://i.imgur.com/cO4Ql7O.png)
 
-:::warning
-:warning: **注意！** 
 
-儲存體帳戶名稱僅能小寫英文字母搭配數字。
-:::
+> :warning: **注意！** 
+> 儲存體帳戶名稱僅能小寫英文字母搭配數字。
+
 
 * 啟用階層命名空間
     * 必須勾選`啟用階層命名空間`，才能夠勾選`啟用SFTP(預覽)`。
@@ -37,9 +36,9 @@
 ![](https://i.imgur.com/MLPP1ID.png)
 
 * 後續設定皆使用預設選項即可。
-:::info
-:memo: **經過測試後，發現到如果要在FTP Client能夠刪除檔案的話，必須要將`啟用Blob的虛刪除`取消**。
-:::
+
+> :memo: **經過測試後，發現到如果要在FTP Client能夠刪除檔案的話，必須要將`啟用Blob的虛刪除`取消**。
+
 ![](https://i.imgur.com/kvQUKcu.png)
 
 ## 3/ 新增本機使用者
@@ -87,13 +86,11 @@
         * 因此完整的使用者名稱為```testblobsftp0729. user1ctr.user1```。
 * 新增完使用者後，可以將其停用或者是刪除。
 
-:::warning
-:warning: **注意！** 
-* [Azure Blob 儲存體中 SSH 檔案傳輸通訊協定 (SFTP) 支援的限制和已知問題 (預覽)](https://docs.microsoft.com/zh-tw/azure/storage/blobs/secure-file-transfer-protocol-known-issues)
-    * 本機使用者是目前支援 SFTP 端點身分識別管理的唯一形式。
-    * SFTP 端點不支援 Azure Active Directory (Azure AD)。
-:::
 
+> :warning: **注意！** 
+> * [Azure Blob 儲存體中 SSH 檔案傳輸通訊協定 (SFTP) 支援的限制和已知問題 (預覽)](https://docs.microsoft.com/zh-tw/azure/storage/blobs/secure-file-transfer-protocol-known-issues)
+> * 本機使用者是目前支援 SFTP 端點身分識別管理的唯一形式。
+> * SFTP 端點不支援 Azure Active Directory (Azure AD)。
 
 ## 4/ 容器中新增目錄及上傳檔案
 * 點選`容器`->剛才建立的容器`user1ctr`。
@@ -135,9 +132,9 @@
 
 ![](https://i.imgur.com/MGmJQlD.png)
 
-:::warning
-:mag_right: **Discovery**
-* 但我有發現到，透過SAS來訪問不同檔案類型會有不同的結果，瀏覽器可能會顯示文件的內容(如上範例)，或是不顯示文件內容直接自動開始下載檔案。
+
+> :mag_right: **Discovery**
+> * 但我有發現到，透過SAS來訪問不同檔案類型會有不同的結果，瀏覽器可能會顯示文件的內容(如上範例)，或是不顯示文件內容直接自動開始下載檔案。
 
 >這部分微軟的回覆是：
 > * 瀏覽器在訪問文件後綴為.txt、.json等的文件時，默認操作會將文件内容直接顯示在螢幕上。
@@ -149,7 +146,7 @@
 > > ![](https://i.imgur.com/e2C5dMZ.png)
 > > 3. 隨後按照正常步驟生成SAS token與URL，就能在訪問txt等文件類型時讓瀏覽器自動下載了。
 > > 4. 如果您不想讓瀏覽器自動下載文件，而是顯示在瀏覽器中，則可以將對應的.jpg等後綴的文件中對應的CONTENT-DISPOSITION項修改為”Inline”，再產生SAS token訪問即可。但請注意，由於某些文件不支持在瀏覽器上顯示，而需要某些特定軟體打開，因此此方法僅對部分文件類型適用，例如.jpg等圖片類型文件。
-:::
+
 
 ## 7/ Reference
 * [Azure Blob 儲存體的 SSH 檔案傳輸通訊協定 (SFTP) 支援 (預覽)](https://docs.microsoft.com/zh-tw/azure/storage/blobs/secure-file-transfer-protocol-support)
