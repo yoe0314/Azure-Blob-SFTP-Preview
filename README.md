@@ -3,7 +3,15 @@
 
 ###### tags:`Azure` `Storage Account` `Blob` `SFTP` `2022`
 
-[toc]
+[![hackmd-github-sync-badge](https://hackmd.io/cAY4JYV5Tvu_XfWuOlWLHg/badge)](https://hackmd.io/cAY4JYV5Tvu_XfWuOlWLHg)
+
+  * [1/ 基本介紹](#1-基本介紹)
+  * [2/ 建立儲存體帳戶](#2-建立儲存體帳戶)
+  * [3/ 新增本機使用者](#3-新增本機使用者)
+  * [4/ 容器中新增目錄及上傳檔案](#4-容器中新增目錄及上傳檔案)
+  * [5/ 使用FTP Client測試](#5-使用ftp-client測試)
+  * [6/ 補充](#6-補充)
+  * [7/ Reference](#7--reference)
 
 ## 1/ 基本介紹
 * [Azure Blob 儲存體的 SSH 檔案傳輸通訊協定 (SFTP) 支援 (預覽)](https://docs.microsoft.com/zh-tw/azure/storage/blobs/secure-file-transfer-protocol-support)
